@@ -1,0 +1,46 @@
+ <header class="clearfix">
+	<div class="container topHeader">
+		<div class="logoContainer pull-left">
+			<img src="images/logo.png" class="logo">
+		</div>
+		<div class="navButtons pull-right">
+			<button type="button" class="btn btn-primary ">Log in</button>
+			<button type="button" class="btn btn-primary ">Register</button>
+		</div>
+	</div>
+	<nav class="">
+		<div class="container">
+			<div class="row">
+				<ul class="navList pull-right nav navbar-nav">
+				  <li><a [routerLink]="['/home']">Home</a></li>
+				  <li><a [routerLink]="['/aboutUs']">About Us</a></li>
+				  <li><a [routerLink]="['/newsevent']">News and Event</a></li>
+			      <li><a [routerLink]="['/admission']">Admission</a></li>
+				  <li><a href="gallery.html">Gallery</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+
+<div class="wrapper col-sm-12 no-padder">
+	
+ 
+
+	<!-- second section starts -->
+ 
+
+	<!-- third section starts -->
+	<div class="container">
+		<div class="row section">
+			<div class="col-sm-12">
+
+			<div class='container'>
+            <router-outlet></router-outlet>
+            </div>				
+			
+			</div>
+		</div>
+	</div>
+
+</div>
