@@ -12,9 +12,7 @@ var http_1 = require("@angular/http");
 var router_1 = require("@angular/router");
 var app_component_1 = require("./app.component");
 var home_component_1 = require("./components/home/home.component");
-var events_component_1 = require("./components/events/events.component");
-var news_component_1 = require("./components/news/news.component");
-var banner_component_1 = require("./components/banner/banner.component");
+var eventsnews_component_1 = require("./components/eventsandnews/eventsnews.component");
 var AboutUs_component_1 = require("./components/aboutUs/AboutUs.component");
 var admission_component_1 = require("./components/admission/admission.component");
 var AppModule = (function () {
@@ -27,12 +25,15 @@ AppModule = __decorate([
         imports: [platform_browser_1.BrowserModule, http_1.HttpModule, router_1.RouterModule.forRoot([
                 { path: 'home', component: home_component_1.HomeComponent },
                 { path: 'aboutUs', component: AboutUs_component_1.AboutUsComponent },
-                { path: 'newsevent', component: events_component_1.EventComponent },
+                { path: 'newsevent', component: eventsnews_component_1.EventNewsComponent },
                 { path: 'admission', component: admission_component_1.AdmissionComponent },
                 { path: '**', redirectTo: 'home', pathMatch: 'full' }
             ])
         ],
-        declarations: [app_component_1.AppComponent, home_component_1.HomeComponent, banner_component_1.BannerComponent, events_component_1.EventComponent, news_component_1.NewsComponent, AboutUs_component_1.AboutUsComponent, admission_component_1.AdmissionComponent],
+        declarations: [app_component_1.AppComponent,
+            home_component_1.HomeComponent,
+            eventsnews_component_1.EventNewsComponent, AboutUs_component_1.AboutUsComponent, admission_component_1.AdmissionComponent
+        ],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
