@@ -7,9 +7,11 @@ import { AppComponent }  from './app.component';
 import { HomeComponent }  from './components/home/home.component';
 import { EventNewsComponent }  from './components/eventsandnews/eventsnews.component';
 import { NewsComponent }  from './shared/news/news.component';
+import { EventComponent }  from './shared/Event/events.component';
 import { BannerComponent }  from './components/banner/banner.component';
 import { AboutUsComponent }  from './components/aboutUs/AboutUs.component';
 import { AdmissionComponent }  from './components/admission/admission.component';
+
 
 @NgModule({
   imports: [ BrowserModule,HttpModule,RouterModule.forRoot([ 
@@ -21,7 +23,7 @@ import { AdmissionComponent }  from './components/admission/admission.component'
     ])
            ],
   declarations: [ AppComponent,
-    HomeComponent,
+    HomeComponent,BannerComponent,NewsComponent,EventComponent,
     EventNewsComponent,AboutUsComponent,AdmissionComponent
    ],
   bootstrap: [ AppComponent ]

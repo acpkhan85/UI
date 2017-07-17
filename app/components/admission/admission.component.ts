@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'banner-app',
+    selector: 'admission-app',
     moduleId: module.id,
    templateUrl:'admission.component.html'
     
