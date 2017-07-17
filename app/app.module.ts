@@ -11,8 +11,6 @@ import { BannerComponent }  from './components/banner/banner.component';
 import { AboutUsComponent }  from './components/aboutUs/AboutUs.component';
 import { AdmissionComponent }  from './components/admission/admission.component';
 
-
-
 @NgModule({
   imports: [ BrowserModule,HttpModule,RouterModule.forRoot([ 
     { path: 'home', component: HomeComponent }, 
