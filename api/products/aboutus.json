@@ -1,0 +1,11 @@
+{
+    "AboutUsInfo":"about us info",
+    "leaders":[
+        {"Title":"Title1","FirstName":"FirstName1","LastName":"LastName1","Designation":"Designation1"},
+        {"Title":"Title2","FirstName":"FirstName2","LastName":"LastName2","Designation":"Designation2"},
+        {"Title":"Title3","FirstName":"FirstName3","LastName":"LastName3","Designation":"Designation3"},
+        {"Title":"Title4","FirstName":"FirstName4","LastName":"LastName4","Designation":"Designation4"},
+        {"Title":"Title5","FirstName":"FirstName5","LastName":"LastName5","Designation":"Designation5"}
+              ],
+    "prospectus":{"SchoolProsepectusId":1,"ProspectusImage":"ProspectusImage1","Description":"Description1"}
+}

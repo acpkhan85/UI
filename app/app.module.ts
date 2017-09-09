@@ -11,10 +11,11 @@ import { EventComponent }  from './shared/Event/events.component';
 import { BannerComponent }  from './components/banner/banner.component';
 import { AboutUsComponent }  from './components/aboutUs/AboutUs.component';
 import { AdmissionComponent }  from './components/admission/admission.component';
-
+// import {PopupModule} from 'ng2-opd-popup';
 
 @NgModule({
-  imports: [ BrowserModule,HttpModule,RouterModule.forRoot([ 
+  imports: [ BrowserModule,HttpModule,//PopupModule.forRoot(),
+    RouterModule.forRoot([ 
     { path: 'home', component: HomeComponent }, 
     { path: 'aboutUs', component: AboutUsComponent }, 
     { path: 'newsevent', component: EventNewsComponent }, 

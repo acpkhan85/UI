@@ -14,7 +14,7 @@ var AdmissionComponent = (function () {
 }());
 AdmissionComponent = __decorate([
     core_1.Component({
-        selector: 'banner-app',
+        selector: 'admission-app',
         moduleId: module.id,
         templateUrl: 'admission.component.html'
     })

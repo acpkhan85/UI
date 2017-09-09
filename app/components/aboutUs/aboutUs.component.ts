@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AboutUsService } from './aboutussvc.service';
+import { IAboutUs } from './iabout.model';
 
 @Component({
    
@@ -9,13 +10,16 @@ import { AboutUsService } from './aboutussvc.service';
 })
 export class AboutUsComponent {        
 
+        aboutUs : IAboutUs;
+        info: string;
         constructor(private _aboutUsService  : AboutUsService ){               
-            var result=  _aboutUsService.getAboutUs();                
+                       
                 }
 
 
-        ngOnInit():void{
-                this._aboutUsService.getAboutUs();
+        ngOnInit(): void{        
+                this.info="test";
+          var result = this._aboutUsService.getAboutUs();         
         }
 
 }
